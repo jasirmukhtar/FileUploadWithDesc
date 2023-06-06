@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h3>To upload</h3>
+ <button><a href="upload">Upload</a></button> 
+    <h2>Images:</h2>
+    <div class="img-desc">
+    <% for(let i=0; i<images.length; i++){ %>
+      <div class="img-desc">
+        <a href="/images/<%=images[i]._id%>">
+        <img src="/uploads/<%= images[i].filename %>" id="img-<%=i %>" alt="Image" height="200" width="200">
+      </a>
+        <p><%= images[i].description %></p>
+      </div>
+    <% } %>
+
+  </div>
+
+        <script src="homePage.js">
+    </script>
+</body>
+</html>

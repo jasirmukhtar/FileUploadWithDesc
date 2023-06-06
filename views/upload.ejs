@@ -1,0 +1,17 @@
+<!-- views/home.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+   
+  <title>Homepage</title>
+</head>
+<body>
+  <h1>Homepage</h1>
+  <form action="/upload" method="POST" enctype="multipart/form-data">
+    <input type="file" name="image" required>
+    <input type="text" name="description" placeholder="Enter a description" required>
+    <button type="submit">Upload</button>
+  </form>
+
+</body>
+</html>
